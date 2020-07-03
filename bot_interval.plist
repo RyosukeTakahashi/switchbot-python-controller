@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>test</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Users/ryo.a.murakami/code/src/github.com/RyosukeTakahashi/switchbot-python-controller/switchbot_interval.sh</string>
+    </array>
+    <key>StartInterval</key>
+    <integer>2700</integer>
+    <key>StandardOutPath</key>
+    <string>/Users/ryo.a.murakami/Desktop/stdout.txt</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/ryo.a.murakami/Desktop/stdout.txt</string>
+</dict>
+</plist>

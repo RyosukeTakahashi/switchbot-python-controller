@@ -27,16 +27,17 @@ ble = Adafruit_BluefruitLE.get_provider()
 def main():
     # Clear any cached data because both bluez and CoreBluetooth have issues with
     # caching data and it going stale.
-    ble.clear_cached_data()
+    # ble.clear_cached_data()
 
     # Get the first available BLE network adapter and make sure it's powered on.
     adapter = ble.get_default_adapter()
-    adapter.power_on()
+    # adapter.power_on()
     #print('Using adapter: {0}'.format(adapter.name))
 
     # Disconnect any currently connected devices.  Good for cleaning up and
     # starting from a fresh state.
     #print('Disconnecting any connected devices...')
+    
     ble.disconnect_devices([SBOT_SERVICE_UUID])
 
     # Scan for devices.
@@ -47,7 +48,7 @@ def main():
     try:
         adapter.start_scan()
         known_bots = set()
-        count = 10 
+        count = 30
         while count > 0:
             print('Searching...')
             found = set(ble.find_devices(service_uuids=[SBOT_SERVICE_UUID]))

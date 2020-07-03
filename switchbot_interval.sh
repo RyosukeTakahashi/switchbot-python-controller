@@ -1,0 +1,2 @@
+/Users/ryo.a.murakami/.anyenv/envs/pyenv/shims/python2 /Users/ryo.a.murakami/code/src/github.com/RyosukeTakahashi/switchbot-python-controller/switchbot.py 3f1037a9-756e-4221-ac3a-e3fc445a31dd press
+date
